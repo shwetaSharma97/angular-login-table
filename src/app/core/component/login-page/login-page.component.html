@@ -1,33 +1,52 @@
 <div class="col-md-12 bg-white">
     <div class="row">
-        <div class="col-md-8 p-0 showInDesktop">
-            <img src="assets/images/login-bg.png" class="loginbg">
+
+        <div class="col-md-8 p-0 showInDesktop bg-red loginbg">
+            <div class="spacing">
+                <p class="digi-text"><span class="font-600">Digital</span> Platform <br>for distance <span
+                        class="font-600">learning</span></p>
+                <span class="inter-text">Internet and online based digital technologies such as desktop<br>
+                    computers, mobile phones and other</span>
+            </div>
         </div>
+
         <div class="col-md-4 middleDiv text-center">
             <img src="assets/images/logo.png" class="logo mt-4 mb-4">
 
             <div class="lock-bg mt-5">
                 <i class="fa fa-lock lockicon" aria-hidden="true"></i>
             </div><br>
+
             <label class="text mb-4">Welcome Back</label>
             <div class="input-icons">
                 <i class="fa fa-user icon"></i>
                 <input class="input-field" type="text" placeholder="Username" [(ngModel)]="userName">
 
             </div>
+
             <div class="input-icons">
                 <i class="fa fa-lock icon"></i>
                 <input class="input-field" type="password" placeholder="Password" [(ngModel)]="password">
 
             </div>
+
             <p *ngIf="showError" class="errorMsg"><i class="fa fa-exclamation-triangle mr-1" aria-hidden="true"></i>
                 Please enter atleast 8 character with number, symbol, capital and small letter.</p>
             <p class="text_pwd">Forgot password?</p><br>
+
             <button class="btn btn-login mt-2 mb-2" (click)="onLogin()">Login</button><br>
             <p class="text_pwd">Don't have an Account?<b>Sign Up</b></p><br>
+
         </div>
-        <div class="col-md-8 p-0 showInmobile">
-            <img src="assets/images/login-bg.png" class="loginbg">
+
+        <div class="col-md-8 p-0 showInmobile  bg-red loginbg">
+            <div class="spacing">
+                <p class="digi-text"><span class="font-600">Digital</span> Platform <br>for distance <span
+                        class="font-600">learning</span></p>
+                <span class="inter-text">Internet and online based digital technologies such as desktop
+                    computers, mobile phones and other</span>
+            </div>
         </div>
+        
     </div>
 </div>

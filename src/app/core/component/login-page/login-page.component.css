@@ -1,6 +1,23 @@
 .bg-white{
     background: #ffffff !important;
 }
+.bg-red{
+   background:#fff1f1 !important;
+}
+.digi-text{
+    font-size: 2.6rem;
+    font-weight: 300;
+}
+.inter-text{
+    color: #5c6873;
+}
+.font-600{
+    font-weight: 600;
+}
+.spacing{
+    margin-top: 20%;
+    margin-left: 10%;
+}
 .loginbg{
     height: 100vh;
     width: 100%;
@@ -78,5 +95,14 @@
     .loginbg{
         height: auto;
         width: 100%;
+    }
+    .spacing{
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-bottom: 5%;
+    }
+    .digi-text{
+        font-size: 1.6rem;
+        font-weight: 300;
     }
 }
