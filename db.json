@@ -1,0 +1,46 @@
+{
+  "data": [
+    {
+      "id": 2,
+      "userName": "Jack",
+      "phoneNo": "8866564554",
+      "emailID": "abc@gmail.com"
+    },
+    {
+      "id": 3,
+      "userName": "Steve",
+      "phoneNo": "8867664554",
+      "emailID": "sam@gmail.com"
+    },
+    {
+      "id": 4,
+      "userName": "john",
+      "phoneNo": "9877786556",
+      "emailID": "demo@gmail.com"
+    },
+    {
+      "id": 5,
+      "userName": "Jack",
+      "phoneNo": "8866564554",
+      "emailID": "abc@gmail.com"
+    },
+    {
+      "id": 6,
+      "userName": "Jack",
+      "phoneNo": "8866564554",
+      "emailID": "abc@gmail.com"
+    },
+    {
+      "id": 7,
+      "userName": "Steve",
+      "phoneNo": "8867664554",
+      "emailID": "sam@gmail.com"
+    },
+    {
+      "id": 8,
+      "userName": "john",
+      "phoneNo": "9877786556",
+      "emailID": "demo@gmail.com"
+    }
+  ]
+}

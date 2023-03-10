@@ -1,0 +1,82 @@
+.bg-white{
+    background: #ffffff !important;
+}
+.loginbg{
+    height: 100vh;
+    width: 100%;
+}
+.logo{
+    width: 150px;
+    height: 50px;
+}
+.text{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.lockicon{
+    color: #fb6e6d;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 9px;
+}
+.btn-login{
+    background: #fb6e6d !important;
+    color: #fff !important;
+    width: 100%;
+}
+.text_pwd{
+    float: right;
+    color: #5c6873;
+}
+.middleDiv{
+    padding: 0 70px;
+}
+.lock-bg{
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    background: #fff2f2;
+    border-radius: 25px;
+}
+.input-icons i {
+    position: absolute;
+}
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.icon {
+    padding: 14px;
+    min-width: 40px;
+}
+.input-field {
+    width: 100%;
+    padding: 10px 35px;
+    color: #5c6873;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #e4e7ea;
+    border-radius: 0.25rem;
+}
+.showInDesktop{
+    display: block;
+}
+.errorMsg{
+    color: red;
+    font-size: 12px;
+}
+.showInmobile{
+    display: none;
+}
+@media screen and (max-width: 480px) {
+    .showInDesktop{
+        display: none;
+    }
+    .showInmobile{
+        display: block;
+    }
+    .loginbg{
+        height: auto;
+        width: 100%;
+    }
+}

@@ -1,0 +1,56 @@
+<div class="col-md-12 p-0">
+	<div class="row bg-white">
+		<div class="col-md-12 logo-center">
+			<img src="assets/images/logo.png" class="m-3">
+		</div>
+	</div>
+	<div class="row m-2">
+		<div class="col-md-12 p-0">
+			<label>This is a dummy text</label>
+
+			<button class="btn btn-delete float-right" (click)="onModalPopup(deleteTemplate)"
+				[disabled]="selectedItem.length === 0">Delete</button><br>
+		</div>
+	</div>
+
+	<div class="row ml-2 mr-2" >
+		<p-table [value]="tableList" [columns]="columns" scrollable="true">
+			<ng-template pTemplate="header" let-columns>
+				<tr>
+					<th style="width:2em"></th>
+					<th *ngFor="let column of columns" [pSortableColumn]="column.field" style="width:32%">
+						{{column.name}}
+					</th>
+				</tr>
+			</ng-template>
+			<ng-template  pTemplate="body" let-rowData let-columns="columns" let-index="rowIndex">
+				<tr [pReorderableRow]="index">
+					<td [pReorderableRowHandle]="index" class="checkinput" style="width:2em">
+						<input type="checkbox" (change)="itemSelected(index)">
+					</td>
+					<td *ngFor="let column of columns" style="width:32%">
+						{{rowData[column.field]}}
+					</td>
+				</tr>
+			</ng-template>
+		</p-table>
+	</div>
+</div>
+
+
+<ng-template #deleteTemplate>
+
+	<div class="modal-body p-0 row">
+		<div class="col-md-2 btn-delete">
+			<i class="fa fa-ban mt-4 mb-3" aria-hidden="true"></i>
+		</div>
+		<div class="col-md-10">
+			<label class="mt-2">Are you sure want to delete?</label>
+			<span class="float-right m-2">
+				<button class="btn btn-delete p-1" (click)="deleteData()">Yes</button>
+				<button class="btn btn-cancel p-1" (click)="bsModal.hide()">Cancel</button>
+			</span>
+
+		</div>
+	</div>
+</ng-template>

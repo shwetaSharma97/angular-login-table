@@ -1,0 +1,37 @@
+.btn-delete{
+    background: #fb6e6d !important;
+    color: #fff !important;
+}
+.btn-cancel{
+    background: #fff !important;
+    color: #000 !important;
+    border: 1px solid #000;
+}
+
+.bg-white{
+    background: #ffffff !important;
+}
+.checkinput{
+    padding: 8px !important;
+}
+.logo-center{
+    text-align: left;
+}
+.fa-ban{
+    font-size: 22px;
+    color: #fff;
+}
+::ng-deep body .ui-table .ui-sortable-column.ui-state-highlight{
+    background: #fb6e6d !important;
+    color: #fff !important; 
+    border: 0 !important;
+}
+
+::ng-deep body .ui-table .ui-sortable-column:focus {
+    box-shadow: none !important;
+}
+@media screen and (max-width: 480px) {
+    .logo-center{
+        text-align: center;
+    }
+}

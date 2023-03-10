@@ -1,0 +1,71 @@
+@import "~bootstrap/scss/mixins";
+@import "~@coreui/coreui/scss/coreui";
+@import "./variables";
+
+@import "ngx-bootstrap/datepicker/bs-datepicker.css";
+@import '~ngx-toastr/toastr';
+@import '~primeicons/primeicons.css';
+@import '~primeng/resources/themes/nova-light/theme.css';
+@import '~primeng/resources/primeng.min.css';
+.sidebar-minimizer {
+    top: -55px;
+}
+
+.sidebar-minimized .sidebar-minimizer {
+    top: unset;
+}
+
+.submit-button {
+    display: block;
+    width: auto;
+    background: var(--submit-bg);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--white-color);
+    border-radius: 25px;
+    border: 0 none;
+    cursor: pointer;
+    padding: 10px 40px;
+    margin: 10px 10px 10px 5px;
+}
+.save-button {
+    display: block;
+    width: auto;
+    font-size: 13px;
+    border: 0 none;
+    float: right;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 40px;
+    margin: 10px -14px 10px 5px;
+}
+.back-button {
+    width: auto;
+    float: right;
+    font-size: 13px;
+    border-radius: 25px;
+    padding: 10px 40px;
+    margin: 10px 10px 10px 5px;
+}
+.ack{
+    color: var(--ack);
+    font-style: italic ;
+}
+.question{
+    font-weight: bold;
+}
+label {
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: var(--black);
+}
+h6{
+    font-weight: bold;
+    padding: 10px;
+    margin: 0;
+}
+.was-validated .form-control:invalid, .form-control.is-invalid{
+    border-color: #f86c6b !important;
+    background-image: none;
+  }
