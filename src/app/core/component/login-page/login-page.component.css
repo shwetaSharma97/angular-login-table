@@ -85,6 +85,13 @@
 .showInmobile{
     display: none;
 }
+.sound-logo{
+    float: right;
+    font-size: 10rem;
+    margin-top: 12%;
+    margin-right: 5%;
+    color: #f7b9b8;
+}
 @media screen and (max-width: 480px) {
     .showInDesktop{
         display: none;
